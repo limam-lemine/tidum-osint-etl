@@ -1,0 +1,53 @@
+Dns Records
+
+domain_name : google.com 
+a : ['142.251.5.138', '142.251.5.101', '142.251.5.102', '142.251.5.100', '142.251.5.139', '142.251.5.113'] 
+aaaa : ['2a00:1450:400c:c1d::8a', '2a00:1450:400c:c1d::8b', '2a00:1450:400c:c1d::64', '2a00:1450:400c:c1d::66'] 
+ns : ['ns2.google.com.', 'ns4.google.com.', 'ns3.google.com.', 'ns1.google.com.'] 
+txt : ['Z29vZ2xl', 'google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0', 'google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o', 'docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e', 'globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=', 'v=spf1 include:_spf.google.com ~all', 'google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ', 'apple-domain-verification=30afIBcvSuDV2PLX', 'onetrust-domain-verification=0d477fe608074e6f9c12bca7826035cc', 'docusign=1b0a6754-49b1-4db5-8540-d2c12664b289', 'MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB', 'cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b', 'facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95', 'onetrust-domain-verification=6d685f1d41a94696ad7ef771f68993e0'] 
+mx : ['10 smtp.google.com.'] 
+cname : [] 
+
+whois data
+
+domain_name : GOOGLE.COM 
+registrar : MarkMonitor, Inc. 
+registrar_url : http://www.markmonitor.com 
+reseller : None 
+whois_server : whois.markmonitor.com 
+referral_url : None 
+updated_date : 2024-08-02 02:17:33+00:00 
+creation_date : 1997-09-15 07:00:00+00:00 
+expiration_date : 2028-09-13 07:00:00+00:00 
+name_servers : ['NS1.GOOGLE.COM', 'NS2.GOOGLE.COM', 'NS3.GOOGLE.COM', 'NS4.GOOGLE.COM'] 
+status : ['clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited', 'clientTransferProhibited https://icann.org/epp#clientTransferProhibited', 'clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited', 'serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited', 'serverTransferProhibited https://icann.org/epp#serverTransferProhibited', 'serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited', 'clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)', 'clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)', 'clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)', 'serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)', 'serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)', 'serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)'] 
+emails : ['abusecomplaints@markmonitor.com', 'whoisrequest@markmonitor.com'] 
+dnssec : unsigned 
+name : None 
+org : Google LLC 
+address : None 
+city : None 
+state : None 
+registrant_postal_code : None 
+country : US 
+tech_name : None 
+tech_org : None 
+admin_name : None 
+admin_org : None 
+
+header info
+
+location : None 
+content_type : text/html; charset=ISO-8859-1 
+content_security_policy_report_only : object-src 'none';base-uri 'self';script-src 'nonce-Tha1lN_dQAFhAmRNioR9Zw' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp 
+date : 2026-07-14 14:36:15+00:00 
+expires : -1 
+cache_control : private, max-age=0 
+server : gws 
+content_length : None 
+x_xss_protection : 0 
+x_frame_options : SAMEORIGIN 
+alt_svc : h3=":443"; ma=2592000,h3-29=":443"; ma=2592000 
+final_url : https://www.google.com/ 
+nbr_redirection : 1 
+
