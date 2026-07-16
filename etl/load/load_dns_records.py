@@ -16,7 +16,7 @@ def save_dns_records(domain_id: UUID, dnsRecords: DnsRecords):
             cursor.execute("""
                            INSERT INTO etl.dns_records(domain_id,a,aaaa,ns,txt,cname)
                            VALUES(%(domain_id)s,%(a)s,%(aaaa)s,%(ns)s,%(txt)s,%(cname)s)
-                           ON CONFLICT (domain_id) DO UPDATE SET
+                           ON CONFLICT (domain_id) DO UPDATE SET  --update the existing record with the new values
                                 a = EXCLUDED.a, 
                                 aaaa = EXCLUDED.aaaa, 
                                 ns = EXCLUDED.ns, 
