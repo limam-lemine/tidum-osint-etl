@@ -7,7 +7,7 @@ CREATE TABLE domain (
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),  
     classification TEXT,
     CONSTRAINT classification_valid_values
-        CHECK (classification IS NULL OR classification IN ('malicious', 'suspicious', 'benign'))
+        CHECK (classification IS NULL OR classification IN ('malicious', 'suspicious', 'legit'))
 );
 
 -- job table tracks each scan run for a domain
