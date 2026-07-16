@@ -4,14 +4,14 @@ from model.whois_m import Whois
 from uuid import UUID
 
 @task(description="load whois lookup records into db", retries=2, retry_delay_seconds=2)
-async def save_whois_records(domain_id: UUID, whois_record: Whois):
+def save_whois_records(domain_id: UUID, whois_record: Whois):
     data = whois_record.model_dump()
     
     data["domain_id"] = domain_id
 
-    async with await get_connection() as conn:
-        async with conn.cursor() as cursor:
-            await cursor.execute("""
+    with get_connection() as conn:
+        with conn.cursor() as cursor:
+            cursor.execute("""
                 INSERT INTO etl.whois_lookup (
                     domain_id, registrar, registrar_url, reseller, whois_server, referral_url,
                     updated_date, creation_date, expiration_date, name_servers, status, emails,

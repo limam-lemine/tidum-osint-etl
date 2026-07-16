@@ -4,17 +4,17 @@ from model.http_header import Header
 from uuid import UUID
 
 @task(description="load http metadata into db", retries=2, retry_delay_seconds=2)
-async def save_http_metadata(domain_id: UUID, header: Header):
+def save_http_metadata(domain_id: UUID, header: Header):
     #we convert pydantic object to a dict with .model_dump
     #so psycopg can parse it automatically
-    data = Header.model_dump()
+    data = header.model_dump()
 
     #foreign key     
     data["domain_id"] = domain_id
 
-    async with await get_connection() as conn:
-        async with conn.cursor() as cursor:
-            await cursor.execute("""
+    with get_connection() as conn:
+        with conn.cursor() as cursor:
+            cursor.execute("""
                 INSERT INTO etl.http_metadata (
                     domain_id, location, content_type, content_security_policy_report_only, 
                     response_date, expires, cache_control, server, content_length, 
