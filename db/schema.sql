@@ -78,3 +78,10 @@ CREATE TABLE http_metadata (
     final_url TEXT,
     nbr_redirection INTEGER
 );
+
+CREATE TABLE screenshot (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    domain_id UUID NOT NULL REFERENCES domain(id),
+    screenshot_path TEXT,
+    captured_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
